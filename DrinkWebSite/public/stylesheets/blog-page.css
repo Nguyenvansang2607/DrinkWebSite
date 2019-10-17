@@ -1,0 +1,20 @@
+.sticky-Sidebar{
+    top: 70px;
+    position: sticky;
+    left: 0;
+}
+
+.blog_item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.blog_item {
+    margin: 20px;
+}
+/*blog tab*/
+.div-slide {
+    border-left: 2px solid #D8B979;
+}
+.sidebar {
+    margin: 20px;
+}
+.pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px;}

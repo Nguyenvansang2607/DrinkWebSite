@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
+
+<!-- #region Jssor Slider Begin -->
+<!-- Generator: Jssor Slider Maker -->
+<!-- Source: https://www.jssor.com -->
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+
+        var jssor_1_SlideshowTransitions = [
+            {$Duration:1000,x:1,$Rows:2,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:1000,x:-1,$Rows:2,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}},
+            {$Duration:800,$Zoom:1.9,$Easing:{$Zoom:$Jease$.$InOutExpo},$Opacity:2,$Brother:{$Duration:600,$Zoom:11,$Easing:{$Zoom:$Jease$.$InOutExpo},$Opacity:2,$Shift:-100}},
+            {$Duration:800,$Zoom:11,$Easing:{$Zoom:$Jease$.$InOutExpo},$Opacity:2,$Brother:{$Duration:600,$Zoom:11,$Easing:{$Zoom:$Jease$.$InOutExpo},$Opacity:2,$Shift:-100}},
+            {$Duration:1000,x:-0.6,y:1,$Zoom:11,$Rotate:0.1,$During:{$Left:[0.6,0.4],$Top:[0.6,0.4],$Rotate:[0.6,0.4],$Zoom:[0.6,0.4]},$Easing:{$Left:$Jease$.$InSine,$Top:$Jease$.$InSine,$Rotate:$Jease$.$InSine,$Zoom:$Jease$.$InSine},$Opacity:2,$Brother:{$Duration:600,$Zoom:1,$Rotate:-0.5,$Easing:{$Rotate:$Jease$.$InCubic,$Zoom:$Jease$.$InSine},$Opacity:2}},
+            {$Duration:1000,y:-1,$Cols:2,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2,$Brother:{$Duration:1000,y:1,$Cols:2,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InOutQuart,$Opacity:$Jease$.$Linear},$Opacity:2}}
+        ];
+
+        var jssor_1_SlideoTransitions = [
+            [{b:10600,d:300,sX:-0.4,sY:-0.4,e:{sX:16,sY:16}},{b:11600,d:300,o:-0.6,sX:0.48,sY:0.48,e:{sX:5,sY:5}},{b:11900,d:2000,o:-0.2,sX:-0.08,sY:-0.08,e:{sX:24,sY:24}}],
+            [{b:0,d:2000,x:980,e:{x:16}},{b:2000,d:6000,x:1960,o:-1,e:{x:5}}],
+            [{b:-1,d:1,o:-1,r:180,sX:9,sY:9},{b:4500,d:1000,o:1,r:-180,sX:-9,sY:-9,e:{o:3,r:3,sX:3,sY:3}},{b:7000,d:1500,x:266,y:-150,r:-360,sX:-0.9,sY:-0.9,e:{x:16,y:16,sX:16,sY:16}},{b:8500,d:500,o:-1}],
+            [{b:1100,d:2000,x:629,e:{x:7}},{b:3600,d:1000,x:110,o:-1,r:-180,sX:9,sY:9,e:{x:2,o:2,r:2,sX:2,sY:2}}],
+            [{b:-1,d:1,o:-1,r:-20},{b:11900,d:300,x:77,o:1,r:15,sX:1,sY:1,e:{x:6,r:6,sX:6,sY:6}},{b:12200,d:900,r:15,sX:1,sY:1,e:{r:16,sX:16,sY:16}},{b:13100,d:1100,x:-264,y:77,r:-15,sX:-1,sY:-1,e:{x:16,y:16,r:16,sX:16,sY:16}},{b:14400,d:400,x:34,y:269,e:{y:5}}],
+            [{b:-1,d:1,r:20,rY:40}],
+            [{b:0,d:9900,x:59,y:-107},{b:9900,d:100,x:173,y:23},{b:10000,d:380,x:17,y:-35},{b:10380,d:120,x:-46,y:17,e:{x:3,y:3}},{b:10600,d:300,x:-37,y:-4,rX:45,sX:-0.3,sY:-0.3,e:{x:4,y:4,rX:16,sX:16,sY:16}},{b:11100,d:1300,x:178,y:300,rX:-45,sX:0.4,sY:0.4,e:{x:6,y:6,rX:15,sX:6,sY:6}}],
+            [{b:-1,d:1,o:-0.5,sX:-1,sY:-1},{b:9860,d:60,x:26,y:58,o:-0.5,sX:1.1,sY:1.1},{b:9920,d:100,o:0.5,sX:-1.1,sY:-1.1,e:{sX:32,sY:32}}],
+            [{b:-1,d:1,o:-1},{b:8700,d:1160,x:-137,y:-224,o:1,e:{x:7,y:7}}],
+            [{b:0,d:300,x:1,y:408}],
+            [{b:0,d:600,x:-1,y:408}],
+            [{b:1680,d:2440,x:1,y:-410}],
+            [{b:4800,d:520,x:-1465,y:9}],
+            [{b:5320,d:680,x:-1477,y:9}],
+            [{b:4140,d:640,x:1,y:408}],
+            [{b:0,d:3660,x:50,y:50}],
+            [{b:4800,d:160,x:-392,y:-387},{b:4980,d:800,x:576,y:8}],
+            [{b:2020,d:2120,x:-30,y:-319},{b:4160,d:60,x:-75,y:234}],
+            [{b:0,d:1920,x:-5,y:-63},{b:1920,d:120,x:-152,y:259,tZ:12}]
+        ];
+
+        var jssor_1_options = {
+            $AutoPlay: 1,
+            $Idle: 0,
+            $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions
+            },
+            $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions,
+                $Breaks: [
+                    [{d:300,b:15000}]
+                ]
+            },
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+            },
+            $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+            }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+    });
+</script>
+<style>
+    /*jssor slider loading skin circles css*/
+    .jssorl-005-circles img {
+        animation-name: jssorl-005-circles;
+        animation-duration: 2.4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-005-circles {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    /*jssor slider bullet skin 031 css*/
+    .jssorb031 {position:absolute;}
+    .jssorb031 .i {position:absolute;cursor:pointer;}
+    .jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+    .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+    .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+    .jssorb031 .i.idn {opacity:.3;}
+
+    /*jssor slider arrow skin 053 css*/
+    .jssora053 {display:block;position:absolute;cursor:pointer;}
+    .jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
+    .jssora053:hover {opacity:.8;}
+    .jssora053.jssora053dn {opacity:.5;}
+    .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
+</style>
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1400px;height:400px;overflow:hidden;visibility:hidden;">
+    <!-- Loading Screen -->
+    <div data-u="loading" class="jssorl-005-circles" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+        <img style="margin-top:-25px;position:relative;top:50%;width:50px;height:50px;" src="img/circles.svg" />
+    </div>
+    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1400px;height:400px;overflow:hidden;">
+        <div data-b="0">
+            <img data-u="image" style="opacity:1;" src="http://gongcha.com.vn/wp-content/uploads/2018/03/banner-tintuc-uudai.png" />
+            <div data-t="0" style="position:absolute;top:32px;left:434px;width:448px;height:187px;">
+                <img style="position:absolute;top:0px;left:0px;width:448px;height:187px;max-width:448px;" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-9/60352915_2296990683681252_6725362071875092480_n.png?_nc_cat=108&_nc_oc=AQlhkhx5CbT3B64UDw9_qq8moFWK0soFs4-ywhJEL3zpKfjx_AV7praxXNmhUfG4SrM&_nc_ht=scontent.fdad2-1.fna&oh=11294d7fa732c8fa527cc252d7273a75&oe=5D9AFFD0" />
+            </div>
+            <div data-t="1" style="position:absolute;top:240px;left:-2940px;width:2940px;height:80px;background-image:url('img/white-stripe.svg');"></div>
+            <div data-t="2" style="position:absolute;top:250px;left:40px;width:900px;height:80px;font-size:28px;font-weight:700;color:#1165f5;line-height:2;text-align:center;">Nhanh tay đăng kí tài khoản để nhận giảm giá.</div>
+            <div data-t="3" style="position:absolute;top:250px;left:-469px;width:600px;height:50px;font-size:28px;color:#1165f5;line-height:2;text-align:left;padding:0px 15px 0px 0px;text-shadow:2px 0px;box-sizing:border-box;">Chào mừng bạn đã đến với chúng tôi</div>
+            <div data-t="4" data-ts="preserve-3d" style="position:absolute;top:17px;left:423px;width:504px;height:233px;">
+                <img style="position:absolute;top:112px;left:90px;width:60px;height:60px;max-width:60px;" src="http://sanxuatwobbler.com/Data/images/Giảm giá 50%2C sale off 50%2C icon 50.png" />
+                <img style="position:absolute;top:154px;left:173px;width:30px;height:30px;max-width:30px;" src="https://cdn.vungoi.vn/vungoi/1537244037373_sao.png" />
+                <img style="position:absolute;top:167px;left:364px;width:30px;height:30px;max-width:30px;" src="https://cdn.vungoi.vn/vungoi/1537244037373_sao.png" />
+                <img style="position:absolute;top:70px;left:65px;width:30px;height:30px;max-width:30px;" src="https://cdn.vungoi.vn/vungoi/1537244037373_sao.png" />
+                <img style="position:absolute;top:152px;left:265px;width:40px;height:50px;max-width:40px;" src="https://bizweb.dktcdn.net/100/202/857/themes/524031/assets/icon-trasua.png?1554652265938" />
+                <img data-t="5" style="position:absolute;top:147px;left:424px;width:56px;height:38px;max-width:56px;" src="https://vnsupermark.com/uploads/catalog/matcha-da-xay-1-4bea6871cb.png" />
+            </div>
+            <div data-t="6" data-ts="preserve-3d" style="position:absolute;top:194px;left:504px;width:447px;height:182px;">
+                <div data-t="7" style="position:absolute;top:0px;left:0px;width:56px;height:50px;border-radius:45px;background-color:#ffffff;background-clip:padding-box;"></div>
+                <img data-t="8" style="position:absolute;top:303px;left:216px;width:27px;height:31px;max-width:27px;" src="https://3.bp.blogspot.com/-u6kp2kx68MM/WGdwGxLiljI/AAAAAAAAAic/3RCVSxTTQuwKTkLVl3kJ3Nl0p-dTtm4dwCK4B/dHobQri.png" />
+            </div>
+        </div>
+        <div>
+            <img data-u="image" style="opacity:1;" src="https://feed.thecoffeehouse.com/content/images/2019/01/800x400--1-.png" />
+            <div style="position:absolute;top:50px;left:50px;width:200px;height:40px;font-size:32px;color:#000000;line-height:1.2;text-align:center;">Text</div>
+        </div>
+        <div>
+            <img data-u="image" style="opacity:1;" src="https://feed.thecoffeehouse.com/content/images/2018/10/800x400.png" />
+        </div>
+        <div>
+            <img data-u="image" style="opacity:1;" src="https://cdn3.yame.vn/cimg/new-menu-hot---van-ong-gia-19k/dadff3d2-4cf1-0100-3f7d-0015ae659c7a.jpg?w=800" />
+        </div>
+        <div data-idle="0" style="background-color:rgba(139,206,217,0.02);">
+            <img data-u="image" style="opacity:0.5;" src="http://gongcha.com.vn/wp-content/uploads/2018/03/banner-tintuc-uudai.png" />
+            <div data-ts="preserve-3d" style="position:absolute;top:0px;left:0px;width:1050px;height:314px;">
+                <img data-t="9" style="position:absolute;top:-407px;left:0px;width:700px;height:400px;max-width:700px;" src="https://image.baonghean.vn/w607/Uploaded/2019/btgazsotunzm/2018_04_21/puddinguongvoitrasua54559456_2142018.jpg" />
+                <img data-t="10" style="position:absolute;top:-408px;left:701px;width:750px;height:400px;max-width:750px;" src="https://www.vtmonline.vn/wp-content/uploads/2017/12/vtm-ngon-25122017-kongfo-1.jpg" />
+            </div>
+            <div data-ts="preserve-3d" style="position:absolute;top:0px;left:0px;width:1450px;height:399px;">
+                <img data-t="11" style="position:absolute;top:411px;left:-1px;width:1449px;height:400px;max-width:1449px;" src="http://maytinhtien.net/wp-content/uploads/2017/05/kodo2.jpg" />
+            </div>
+            <div data-ts="preserve-3d" style="position:absolute;top:0px;left:0px;width:1491px;height:386px;">
+                <img data-t="12" style="position:absolute;top:-8px;left:1966px;width:500px;height:400px;max-width:500px;" src="http://doanvatngon.net/wp-content/uploads/2017/07/tra-sua-bac-ha.jpg" />
+                <img data-t="13" style="position:absolute;top:-9px;left:2480px;width:442px;height:400px;max-width:442px;" src="https://diadiem.co/uploads/thumb/2019/01/26/5c4c535c8bc47tra-sua-teawan-636478099351228202.jpg" />
+                <img data-t="14" style="position:absolute;top:-409px;left:0px;width:500px;height:400px;max-width:500px;" src="https://products.trangvangvietnam.com/395722378/tra sua 16oz LOGO.jpg" />
+            </div>
+            <div data-t="15" data-ts="preserve-3d" style="position:absolute;top:0px;left:0px;width:380px;height:549px;">
+                <div data-t="16" style="position:absolute;top:437px;left:442px;width:200px;height:64px;font-size:32px;color:#000000;line-height:1.2;text-align:center;">Rẻ</div>
+                <div data-t="17" style="position:absolute;top:448px;left:239px;width:200px;height:40px;font-size:32px;color:#000000;line-height:1.2;text-align:center;">Chất lượng</div>
+                <div data-t="18" style="position:absolute;top:203px;left:177px;width:207px;height:59px;font-family:Verdana,Geneva,Tahoma,sans-serif;font-size:32px;color:#011716;text-align:center;">Ngon</div>
+            </div>
+        </div>
+    </div>
+    <!-- Bullet Navigator -->
+    <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:-20px;right:12px;" data-autocenter="1" data-scale="0.8" data-scale-bottom="0.8">
+        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+            </svg>
+        </div>
+    </div>
+    <!-- Arrow Navigator -->
+    <div data-u="arrowleft" class="jssora053" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.8" data-scale-left="0.8">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+        </svg>
+    </div>
+    <div data-u="arrowright" class="jssora053" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.8" data-scale-right="0.8">
+        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+        </svg>
+    </div>
+</div>
+<!-- #endregion Jssor Slider End -->
+</body>
+</html>

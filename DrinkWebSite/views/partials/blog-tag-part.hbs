@@ -1,0 +1,22 @@
+{{#each blog}}
+    {{# each this}}
+        <div class="blog_item flex_direction_column ">
+            <a class="article_item_image" href="/blogs/news/the-coffee-house-tham-gia-du-an-xa-hoi-ban-tay-robot-uplift" title="THE COFFEE HOUSE THAM GIA DỰ ÁN XÃ HỘI “BÀN TAY ROBOT” UPLIFT">
+                <div class="article_img" style="background-image: url({{this.imgpath}})"></div>
+            </a>
+            <div class="article_item_info display_flex flex_direction_column justify-content-spbetween" style="background-color:#F2F2F2">
+                <span class="article_tags">Tin tức</span>
+                <h4>
+                    <a href="/blogs/news/the-coffee-house-tham-gia-du-an-xa-hoi-ban-tay-robot-uplift" title="THE COFFEE HOUSE THAM GIA DỰ ÁN XÃ HỘI “BÀN TAY ROBOT” UPLIFT">{{this.type}}</a>
+                </h4>
+                <div class="meta"><time>{{this.date}}</time></div>
+                <div class="short_des">
+                    {{this.description}}
+                </div>
+                <div class="article_item_action">
+                    <a class="animate_btn" href="/blogs/news/the-coffee-house-tham-gia-du-an-xa-hoi-ban-tay-robot-uplift" title="Xem thêm">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+{{/each}}
