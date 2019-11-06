@@ -23,7 +23,7 @@
     "http-errors": "~1.6.2",
     "jquery": "^3.4.1",
     "jquery-confirm": "^3.3.4",
-    "mongoose": "^5.5.8",
+    "mongoose": "^5.7.5",
     "morgan": "~1.9.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
